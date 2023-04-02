@@ -1,4 +1,6 @@
-const url = "http://localhost:8080/user/login";
+// const url = "http://localhost:8080/user/login";
+const url = "https://weary-deer-loincloth.cyclic.app//user/login";
+
 
 let loginBtn = document.getElementById("loginBtn1");
 let loginData = JSON.parse(localStorage.getItem("loginData")) || [];
