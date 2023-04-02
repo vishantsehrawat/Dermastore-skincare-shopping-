@@ -29,6 +29,8 @@ The tech Stack we used for creating this webiste are:-
 + MongoDB
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 + Mongoose
+	![Mongoose](https://img.shields.io/badge/Mongoose-%23323330.svg?style=for-the-badge&logo=mongoose&logoColor=%23F7DF1E)
+
 + Nodemon
 ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD)
 	![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
