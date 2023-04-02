@@ -30,7 +30,7 @@ loginBtn.addEventListener("click", function () {
             if(data.msg != "User not found"){
                 document.getElementById("redirecting").innerText = " Login successfull, redirecting "; 
                 setTimeout(() => {
-                    // window.location.href = "notes.html";
+                    window.location.href = "products.html";
                 }, 2000);
             }
             else{

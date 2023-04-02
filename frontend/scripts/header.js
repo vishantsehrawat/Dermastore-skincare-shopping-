@@ -27,6 +27,8 @@ function navbar() {
                 </div>
             </div>
             <div class="nav-right flex-div">
+            <a href="../src/login.html">Login </a>
+
                 <a href="../src/cart.html">
                     <div class="ac-cart-div flex-div">
                         <img src="/image/profile-icon.png" alt="" class="cart-icon" /> Account
