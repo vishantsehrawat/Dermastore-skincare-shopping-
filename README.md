@@ -7,6 +7,12 @@ SkinStore is an online retailer that specializes in premium skincare, hair care,
 
 
 ----
+## Routes/ Endpoints 
++ http://localhost:8080/user/register  To add new user
++ http://localhost:8080/user/login  For user Login
++ http://localhost:8080/product To see all the products
++ http://localhost:8080/product/add To add product
++ http://localhost:8080/product/delete To delete product
 ## Tech Stack 
 
 The tech Stack we used for creating this webiste are:-
