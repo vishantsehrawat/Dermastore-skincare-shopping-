@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+/* ###### Login form ########################## */
+.loginContainer {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+}
+.leftContainer {
+    width: 50%;
+    position: relative;
+}
+.left {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+.loginFormContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+.leftHeadingText {
+    font-size: 30px;
+    font-weight: 800;
+    padding: 30px 0;
+}
+.loginText2 {
+    font-size: 26px;
+    color: grey;
+    font-weight: 600;
+    padding: 10px 0;
+}
+#name,
+#email,
+#password {
+    height: 40px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 70%;
+    border-radius: 5px;
+}
+.nameLabel,
+.emailLabel,
+.passwordLabel {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.alreadyDiv {
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: grey;
+    margin-top: 20px;
+}
+.loginBtn {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.4rem;
+    color: white;
+    background-color: black;
+}
+.Signin {
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    background-color: maroon;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.Signin a {
+    color: white;
+}
+
+.right {
+    width: 50%;
+    background-color: black;
+}
+
+.rImgContainer img {
+    width: 100%;
+    height: 100vh;
+}
+/* login form end ------------------------ */
