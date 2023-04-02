@@ -103,6 +103,7 @@ body {
 
 .rImgContainer img {
     width: 100%;
+    filter: invert();
     height: 100vh;
 }
 /* login form end ------------------------ */
@@ -115,3 +116,9 @@ body {
         width: 100%;
     }
 } */
+
+#redirecting{
+    color: green;
+    padding-top: 20px;
+    text-transform: uppercase;
+}

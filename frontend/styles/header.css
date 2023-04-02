@@ -49,7 +49,7 @@ a {
 }
 
 #logo {
-    width: 100px;
+    width: 200px;
     background-color: transparent;
 }
 
@@ -156,7 +156,7 @@ a {
 }
 
 .dropdown .dropbtn {
-    font-size: 17px;
+    font-size: 15px;
     border: none;
     outline: none;
     color: white;

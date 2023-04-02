@@ -1,0 +1,81 @@
+/* dynamic showing of .productList */
+#productsList {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-right: 4%;
+}
+.productCard {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+        rgba(90, 125, 188, 0.05) 0px 0.25em 1em inset;
+    border-radius: 2px;
+    overflow: hidden;
+
+    /* background-color: rgb(237, 235, 235); */
+}
+.productCard img {
+    width: 100%;
+    border-radius: 10px;
+    /* z-index: -1; */
+}
+.productCard:hover {
+    transform: scale(1.03);
+    transition: 0.2s all ease-in-out;
+}
+.productCard .productName {
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 0;
+    font-weight: 500;
+}
+.productPrice {
+    font-size: 14px;
+    color: green;
+    padding: 0 10px;
+    font-weight: 700;
+}
+.productCard .productPrice::before {
+    content: "Rs ";
+}
+.addToCartBtn {
+    border: none;
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+/* dynamic showinng of product list   enddddddddddddddddddddd */
+.addToCartBtn {
+    background-color: black;
+    color: #fff;
+    border-color: #007bff;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.addToCartBtn:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+.productHeading{
+    padding:20px;
+}

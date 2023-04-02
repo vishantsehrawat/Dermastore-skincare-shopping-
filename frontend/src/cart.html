@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/cart.css">
+</head>
+
+<body>
+
+    <p class="cartHeading">Your cart </p>
+    <div class="cartContainer">
+        <div id="leftProductDisplay">
+        </div>
+        <div class="rightPromoDiv">
+            <p class="promoHeading">promos & offers</p>
+            <p class="promoinputlabel">Enter promo code</p>
+            <div class="promoInputDiv">
+                <input type="text" class="promoInput">
+                <buttom class="promoApplyButton">APPLY</buttom>
+
+            </div>
+            <div class="subtotalDiv">
+                <p class="subtototalText">Subtotal</p>
+                <p class="subtotalNumber">INR <span id="grandTotal"></span></p>
+            </div>
+            <p class="shippingDuty">Shipping, duties & taxes calculated at checkout (if applicable)</p>
+            <a href="./checkout.html">
+                <button class="proceedToCheckout">PROCEED TO CHECKOUT</button>
+            </a>
+            <p class="itemAvailability">Item availability and pricing are not guaranteed.</p>
+        </div>
+    </div>
+ 
+</body>
+<script src="../scripts/cart.js"></script>
+
+</html>

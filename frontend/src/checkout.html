@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+
+<body>
+    <div id="navbar-outer-div"></div>
+
+    <!-- popup for transaction completed ###################-->
+    <div class="popup">
+        <p id="myPopup">TRANSACTION COMPLETED</p>
+    </div>
+    <!-- popup for transaction completedend ----------------------- -->
+
+    <!-- user address and data filling  -->
+    <div class="checkoutContainer">
+
+        <div class="mainFormDiv">
+            <div class="poweredBy">
+
+                <!-- <p class="paymentHeading">Payment Powered by <img src="./images/paytmLogo.svg" alt="img"></p> -->
+            </div>
+            <form action="" class="form">
+                <input type="email" placeholder="Email" class="email">
+                <div class="nameDiv">
+                    <input type="text" placeholder="First Name" class="fname">
+                    <input type="text" placeholder="Last Name" class="lname">
+                </div>
+                <input type="text" placeholder="Address" class="address">
+                <input type="text" placeholder="Address 2" class="address2">
+                <input type="text" placeholder="Postal code" class="pincode">
+                <input type="text" placeholder="City" class="city">
+                <input type="text" placeholder="Phone" class="phone">
+            </form>
+            <button class="completeTransaction" id="completeTransaction">Complete Transaction</button>
+            <!-- <div class="paymentPartners">
+                <p class="paypartners">Our payment partners</p>
+                <div class="partnerImages">
+                    <img src="./images/paypal.svg" alt="img">
+                    <img src="./images/paytmLogo.svg" alt="img">
+                    <img src="./images/upi.svg" alt="img">
+                    <img src="./images/phonepe.svg" alt="img">
+                    <img src="./images/mobikwik.svg" alt="img">
+                </div>
+            </div> -->
+        </div>
+        <div class="rightPaymentDiv">
+            <div class="advImg">
+                <p class="checkNewProduct">Checkout Our Natural Skincare Product</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGypvRbgkGq3MkJfRSIOIdCIslH-6SZ-VLjQ&usqp=CAU" alt="img">
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------address and data filling --------------------- -->
+
+    <!-- <div id="footer-outer-div"></div> -->
+   
+</body>
+<script src="../scripts/checkout.js"></script>
+<script type="module">
+    import navbar from "../scripts/header.js";
+    document.querySelector("#navbar-outer-div").innerHTML = navbar();
+
+    import footer from "../scripts/footer.js";
+    document.querySelector("#footer-outer-div").innerHTML = footer();
+
+</script>
+</html>

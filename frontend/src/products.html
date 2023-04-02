@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/products.css">
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css">
+</head>
+<body>
+    <div id="navbar-outer-div"></div>
+
+    <h1 class="productHeading">SkinCare Products</h1>
+
+    <div id="productsList"></div>
+    <div id="footer-outer-div"></div>
+
+</body>
+<script src="../scripts/products.js"></script>
+<script>
+    const url = "http://localhost:8080/product"
+    // Get the product list from the API endpointconso
+    fetch(url)
+      .then(response => response.json())
+      .then(products => {
+        console.log(products)
+        displayData(products.data)
+      })
+      .catch(error => console.error(error));
+
+      let cartData=[];
+      let productContainer = document.getElementById("productsList");
+function displayData(products) {
+    // console.log(products);
+    productContainer.innerHTML = null;
+    products.forEach((el, index) => {
+        let product = document.createElement("div");
+        product.setAttribute("class", "productCard");
+        let productImage = document.createElement("img");
+        productImage.setAttribute("src", el.image);
+        let productName = document.createElement("p");
+        productName.setAttribute("class", "productName");
+        productName.innerText = el.title;
+        let productPrice = document.createElement("p");
+        productPrice.setAttribute("class", "productPrice");
+        productPrice.innerText = el.price;
+
+        let addToCart = document.createElement("button");
+        addToCart.setAttribute("class", "addToCartBtn");
+        addToCart.innerText = "Add To Cart";
+        addToCart.addEventListener("click", function () {
+            let newData = products.filter(function (element, ind) {
+                if (ind == index) {
+                    alert("Product Added to Cart");
+                    cartData.push(element);
+                }
+            });
+            console.log(cartData);
+            localStorage.setItem("cart", JSON.stringify(cartData));
+        });
+        product.append(productImage, productName, productPrice, addToCart);
+        productContainer.append(product);
+    });
+}
+
+//Sorting DATA ACCORDING TO THE PRICE
+let filterBy = document.getElementById("filter");
+filterBy.addEventListener("change", function (e) {
+    let filterByValue = e.target.value;
+    // console.log(filterByValue);
+    if (filterByValue.toLowerCase() == "default") {
+        location.reload();
+        displayData(products);
+    } else if (filterByValue.toLowerCase() == "low to high") {
+        let sortedData = products.sort((a, b) => {
+            return a.price.localeCompare(b.price);
+        });
+        displayData(sortedData);
+    } else if (filterByValue.toLowerCase() == "high to low") {
+        let sortedData = products.sort((b, a) => {
+            return a.price.localeCompare(b.price);
+        });
+        displayData(sortedData);
+    }
+});
+  </script>
+  <script type="module">
+    import navbar from "../scripts/header.js";
+    document.querySelector("#navbar-outer-div").innerHTML = navbar();
+
+    import footer from "../scripts/footer.js";
+    document.querySelector("#footer-outer-div").innerHTML = footer();
+
+</script>
+</html>

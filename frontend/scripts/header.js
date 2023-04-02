@@ -16,8 +16,8 @@ function navbar() {
     <div>
         <div id="navbar">
             <div id="logo-div">
-                <a href="/index.html">
-                    <img id="logo" src="../images/derma" alt="Navbar-logo" />
+                <a href="../src/index.html">
+                    <img id="logo" src="../images/logo-black.png" alt="Navbar-logo" />
                 </a>
             </div>
             <div class="flex-div search-outer-div">
@@ -27,12 +27,12 @@ function navbar() {
                 </div>
             </div>
             <div class="nav-right flex-div">
-                <a href="../register.html">
+                <a href="../src/cart.html">
                     <div class="ac-cart-div flex-div">
                         <img src="/image/profile-icon.png" alt="" class="cart-icon" /> Account
                     </div>
                 </a>
-                <a href="../cart.html">
+                <a href="../src/cart.html">
                     <div class="ac-cart-div flex-div">
                         <img src="/image/cart-icon.jpg" alt="" class="cart-icon" /> Cart
                     </div>
@@ -76,10 +76,10 @@ function navbar() {
             <div class="dropdown">
                 <button class="dropbtn">Makeup</button>
                 <div class="dropdown-content">
-                    <a href="../SkinCeuticals.html">View All Cousmetics</a>
-                    <a href="../Bronzers.html">Bronzers </a>
-                    <a href="../Lipsticks.html">Lipsticks</a> 
-                    <a href="../dior.html">Dior</a>
+                    <a href="#">View All Cousmetics</a>
+                    <a href="#">Bronzers </a>
+                    <a href="#">Lipsticks</a> 
+                    <a href="#">Dior</a>
                     <a href="">Maskaras</a>
                     <a href="">Face Powders</a>
                     <a href="">Foundations</a>
@@ -91,9 +91,9 @@ function navbar() {
             <div class="dropdown">
                 <button class="dropbtn">Skin Care</button>
                 <div class="dropdown-content">
-                <a href="../SkinMedica.html">SkinMedica</a>
-                <a href="../SkinCeuticals.html">SkinCeuticals</a>
-                <a href="">Clear SkinCare</a>
+                <a href="#">SkinMedica</a>
+                <a href="#">SkinCeuticals</a>
+                <a href="#">Clear SkinCare</a>
                 <a href="#">5*Rated Products</a>
                 <a href="#">Gifts & Sets</a>
                 <a href="#">Supersizes & Duo</a>

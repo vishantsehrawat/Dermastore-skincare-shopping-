@@ -10,8 +10,25 @@ loginBtn.addEventListener("click", function () {
         email: email.value,
         password: password.value,
     };
-    loginData.push(dataObj);
-    localStorage.setItem("loginData", JSON.stringify(loginData));
+    // loginData.push(dataObj);
+
+    fetch('http://localhost:8080/user/register', {
+        method: 'POST',
+        body: JSON.stringify(dataObj),
+        headers: {
+            "Content-type": " application/json"
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        // Handle response data as needed
+      })
+      .catch(error => {
+        console.error(error);
+        // Handle error as needed
+      });
+
     alert("Sign up completed");
-    location.reload();
+    // location.reload();
 });

@@ -1,112 +1,123 @@
-hr {
-    border: 0.5px solid gray;
-}
-a{
+:root {
+    --border: 0.5px solid gray;
+    --btn-bg: black;
+    --btn-color: white;
+  }
+  
+  hr {
+    border: var(--border);
+  }
+  
+  a {
     color: white;
     text-decoration: none;
-}
-btnId:hover{
+  }
+  
+  #btnId:hover {
     background-color: skyblue;
-}
-
-#footer {
+  }
+  
+  #footer {
     width: 85%;
     height: 500px;
     margin: auto;
     display: flex;
-}
-
-#footer>#footer1,
-#footer2 {
+  }
+  
+  #footer > #footer1,
+  #footer > #footer2 {
     width: 50%;
     height: 100%;
-}
-
-#footer1>hr {
+  }
+  
+  #footer1 > hr {
     width: 90%;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 40px;
-}
-
-#footer1>h4,
-#footer2>h4 {
+    border: var(--border);
+  }
+  
+  #footer1 h4,
+  #footer2 h4 {
     color: gray;
     font-weight: lighter;
-}
-
-#sign>button {
-    background-color: black;
-    color: white;
-    border: 0px;
+  }
+  
+  #sign button {
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    border: none;
     height: 40px;
-}
-
-.klass {
+  }
+  
+  .klass {
     display: flex;
-}
-
-.klass>img {
+  }
+  
+  .klass > img {
     width: 20px;
     height: 20px;
     margin-top: 10px;
     margin-left: 5px;
-}
-
-.klass>p {
+  }
+  
+  .klass > p {
     margin-left: 15px;
     margin-top: 10px;
     color: gray;
-}
-
-#connectimg>img {
+  }
+  
+  #connectimg > img {
     width: 50px;
     height: 50px;
-}
-
-#detail {
+  }
+  
+  #detail {
     display: flex;
-}
-
-#detail>div {
+  }
+  
+  .detaildiv {
     width: 32%;
     height: 380px;
     margin: auto;
-}
-
-.detaildiv>hr {
+  }
+  
+  .detaildiv > hr {
     width: 170px;
-    margin-left: 0px;
+    margin-left: 0;
     margin-top: 25px;
-}
-
-.detaildiv>p {
+    border: var(--border);
+  }
+  
+  .detaildiv p {
     color: gray;
-}
-
-#lastfoot {
+  }
+  
+  #lastfoot {
     display: flex;
     width: 85%;
     margin: auto;
-}
-
-#lastfoot>div>img {
+  }
+  
+  #lastfoot > div > img {
     border: 1px solid gray;
     border-radius: 10px;
     width: 70px;
     height: 50px;
-}
-
-#lfimg {
+  }
+  
+  #lfimg {
     margin-left: 35%;
     margin-bottom: 20px;
-}
-
-#blf {
+  }
+  
+  #blf {
     width: 250px;
-}
-
-@media only screen and (min-width: 0px) and (max-width: 800px) {
-    #footer-outer-div{
-        display: none;
+  }
+  
+  @media only screen and (max-width: 800px) {
+    #footer-outer-div {
+      display: none;
     }
-}
+  }
+  
