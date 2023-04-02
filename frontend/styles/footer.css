@@ -19,7 +19,7 @@
   
   #footer {
     width: 85%;
-    height: 500px;
+    /* height: 500px; */
     margin: auto;
     display: flex;
   }
@@ -42,12 +42,20 @@
     color: gray;
     font-weight: lighter;
   }
-  
+  #sign *{
+    /* padding: 0px; */
+  }
+  #sign h4{
+    font-size: 16px;
+    color:black;
+    padding-bottom: 10px;
+  }
   #sign button {
     background-color: var(--btn-bg);
     color: var(--btn-color);
     border: none;
-    height: 40px;
+    /* height: 40px; */
+    padding: 10px;
   }
   
   .klass {
@@ -67,9 +75,14 @@
     color: gray;
   }
   
+  #connect h4{
+    color: black;
+    font-size: 16px;
+  }
   #connectimg > img {
     width: 50px;
-    height: 50px;
+    padding: 5px;
+    /* height: 50px; */
   }
   
   #detail {
@@ -78,7 +91,8 @@
   
   .detaildiv {
     width: 32%;
-    height: 380px;
+    height: 340px;
+
     margin: auto;
   }
   
@@ -91,11 +105,13 @@
   
   .detaildiv p {
     color: gray;
+    padding: 10px;
   }
   
   #lastfoot {
     display: flex;
     width: 85%;
+    padding: 10px;
     margin: auto;
   }
   
@@ -110,7 +126,12 @@
     margin-left: 35%;
     margin-bottom: 20px;
   }
-  
+  #lfimg h4{
+    padding: 10px;
+  }
+  #lfimg img{
+    margin: 5px;
+  }
   #blf {
     width: 250px;
   }
@@ -121,3 +142,6 @@
     }
   }
   
+  .helpAndInfo *{
+    padding: 5px;
+  }
