@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="navbar-outer-div"></div>
+    <iframe src="../scripts/header.html" frameborder="0" scrolling="no" width="100%" height="180px"></iframe>
 
     <br>
     <div id="upper_text">
@@ -289,17 +289,10 @@
     <br>
     <br>
     <br>
-    <div id="footer-outer-div"></div>
+    <iframe src="../scripts/footer.html" frameborder="0" scrolling="no" width="100%" height="600px"></iframe>
 
 </body>
 
 </html>
-<script type="module">
-    import navbar from "../scripts/header.js";
-    document.querySelector("#navbar-outer-div").innerHTML = navbar();
 
-    import footer from "../scripts/footer.js";
-    document.querySelector("#footer-outer-div").innerHTML = footer();
-
-</script>
 <script src="../scripts/index.js"></script>

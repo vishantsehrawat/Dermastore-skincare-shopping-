@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <div id="navbar-outer-div"></div>
+    <iframe src="../scripts/header.html" frameborder="0" scrolling="no" width="100%"  height="180px"></iframe>
+    
 
     <!-- popup for transaction completed ###################-->
     <div class="popup">
@@ -72,13 +73,6 @@
         </figure>
     </div>
 </body>
-<script src="../scripts/checkout.js"></script>
-<script type="module">
-    import navbar from "../scripts/header.js";
-    document.querySelector("#navbar-outer-div").innerHTML = navbar();
 
-    import footer from "../scripts/footer.js";
-    document.querySelector("#footer-outer-div").innerHTML = footer();
-
-</script>
+    <script src="../scripts/checkout.js"></script>
 </html>
