@@ -210,6 +210,9 @@
     color: rgb(70, 69, 69);
     text-align: center;
 }
+.btn1_sec a {
+    color: black;
+}
 
 @media only screen and (min-width: 521px) and (max-width: 992px) {
 
