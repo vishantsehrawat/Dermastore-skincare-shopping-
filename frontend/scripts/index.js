@@ -4,9 +4,9 @@ var i = 0;
 var images = [];
 var time = 2000;
 
-images[0] = "../images/slidingImage1.PNG";
-images[1] = "../images/slidingImage2.PNG";
-images[2] = "../images/slidingImage3.PNG";
+images[0] = "./images/slidingImage1.PNG";
+images[1] = "./images/slidingImage2.PNG";
+images[2] = "./images/slidingImage3.PNG";
 
 function changeImg(){
 
